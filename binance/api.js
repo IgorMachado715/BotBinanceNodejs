@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const apiKey = process.env.API_KEY;
 const apiSecret = process.env.SECRET_KEY;
 const apiUrl = process.env.API_URL;
-
+//api
 async function privateCall(path, data = {}, method = 'GET'){
     const timestamp = Date.now();
     const signature = crypto.createHmac('sha256', apiSecret)
